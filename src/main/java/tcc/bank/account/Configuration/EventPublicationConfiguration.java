@@ -1,4 +1,4 @@
-package tcc.banco.conta.Configuration;
+package tcc.bank.account.Configuration;
 
 import org.springframework.amqp.core.AmqpAdmin;
 import org.springframework.amqp.core.Binding;

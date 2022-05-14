@@ -12,7 +12,7 @@ eureka:
 
 spring:
   application:
-    name: conta
+    name: account
   jpa:
     show-sql: false
     hibernate:
@@ -23,10 +23,10 @@ spring:
   jmx:
     enabled: false
   datasource:
-    url: jdbc:mysql://localhost:3306/conta?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&sslMode=DISABLED&useLegacyDatetimeCode=false&serverTimezone=GMT-3
+    url: jdbc:mysql://localhost:3306/account?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&sslMode=DISABLED&useLegacyDatetimeCode=false&serverTimezone=GMT-3
     username: root
     password: root
 
 axon:
   amqp:
-    exchange: banco.eventos
+    exchange: bank.events

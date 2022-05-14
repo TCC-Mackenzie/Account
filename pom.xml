@@ -10,11 +10,11 @@
         <relativePath/>
     </parent>
 
-	<groupId>tcc.banco</groupId>
-	<artifactId>conta</artifactId>
+	<groupId>tcc.bank</groupId>
+	<artifactId>account</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>conta</name>
-	<description>Service Conta</description>
+	<name>account</name>
+	<description>Account Service</description>
 
 	<properties>
 		<java.version>11</java.version>
@@ -79,7 +79,7 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>conta</finalName>
+		<finalName>account</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

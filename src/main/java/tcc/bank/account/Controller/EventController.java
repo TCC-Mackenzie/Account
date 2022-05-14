@@ -1,4 +1,4 @@
-package tcc.banco.conta.Controller;
+package tcc.bank.account.Controller;
 
 import org.axonframework.eventhandling.EventMessage;
 import org.axonframework.eventsourcing.eventstore.EventStore;
@@ -22,9 +22,9 @@ public class EventController {
     }
 
     @GetMapping
-    @RequestMapping(value = "/{aggregateCodigo}")
+    @RequestMapping(value = "/{accountId}")
     @Transactional(readOnly = true)
-    public List<EventMessage> listEvents(@PathVariable String aggregateCodigo) {
-        return eventStore.readEvents(aggregateCodigo).asStream().collect(Collectors.toList());
+    public List<EventMessage> listEvents(@PathVariable String accountId) {
+        return eventStore.readEvents(accountId).asStream().collect(Collectors.toList());
     }
 }
