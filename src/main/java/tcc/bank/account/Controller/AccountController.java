@@ -18,13 +18,13 @@ public class AccountController {
         this.commandGateway = commandGateway;
     }
 
-    @PostMapping
+    @PostMapping(value = "/v1.0")
     public CompletableFuture<String> create(@RequestBody AccountDTO dto) {
         var command = new CreateAccountCommand(1, dto.getStatus());
         return commandGateway.send(command);
     }
 
-    @PutMapping(value = "/{id}/balance")
+    @PutMapping(value = "/v1.0/{id}/balance")
     public CompletableFuture<String> updateBalance(@PathVariable Integer id, @RequestBody AccountDTO dto) {
         var command = new UpdateBalanceCommand(id, dto.getBalance());
         return commandGateway.send(command);
