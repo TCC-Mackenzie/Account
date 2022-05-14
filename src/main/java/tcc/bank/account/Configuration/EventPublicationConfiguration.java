@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class EventPublicationConfiguration {
-    @Value("${axon.amqp.exchange:banco.eventos}")
+    @Value("${axon.amqp.exchange:bank.events}")
     String exchangeName;
 
     @Bean
