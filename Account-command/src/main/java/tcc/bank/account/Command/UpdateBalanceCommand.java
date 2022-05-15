@@ -11,7 +11,7 @@ public class UpdateBalanceCommand {
 
     private BigDecimal balance;
 
-    public UpdateBalanceCommand(Integer idAccount, BigDecimal balance) {
+    public UpdateBalanceCommand(Integer accountId, BigDecimal balance) {
         this.accountId = accountId;
         this.balance = balance;
     }
